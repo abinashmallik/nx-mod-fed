@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nx-module-feration/welcome": ["shared/welcome/src/index.ts"],
+      "remote1/Module": ["apps/react/remote1/src/remote-entry.ts"],
+      "remote2/Module": ["apps/react/remote2/src/remote-entry.ts"],
+      "remote3/Module": ["apps/react/remote3/src/remote-entry.ts"],
+      "remote3/welcome": ["shared/welcome/src/index.ts"],
+      "remote4/Module": ["apps/react/remote4/src/remote-entry.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "welcome",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "shared/welcome/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/shared/welcome",
+        "main": "shared/welcome/src/index.ts",
+        "tsConfig": "shared/welcome/tsconfig.lib.json",
+        "assets": ["shared/welcome/*.md"]
+      }
+    }
+  }
+}
